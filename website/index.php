@@ -9,7 +9,7 @@
 <body>
 
     <?php
-        $users = file_get_contents("");
+        $users = file_get_contents("http://api:4000/users");
         $users = json_decode($users);
     ?>
 

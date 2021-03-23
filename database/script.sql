@@ -1,8 +1,6 @@
-CREATE DATABASE IF NOT EXISTS api_database;
-
 CREATE TABLE users (
-    SERIAL id,
-    VARCHAR(50) name
+    id serial,
+    name VARCHAR(50)
 );
 
 INSERT INTO users (name) VALUES

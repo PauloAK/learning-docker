@@ -3,7 +3,7 @@ const postgres = require("postgres");
 
 const app = express();
 const sql = postgres({
-    host: 'docker-database-container',
+    host: 'db',
     database: 'api_database',
     username: 'postgres',
     password: 'postgres'
@@ -21,6 +21,6 @@ app.get('/', (req, res) => {
     res.send("API Online");
 })
 
-app.listen(8000, '0.0.0.0', () => {
-    console.log("Listening on port 8000")
+app.listen(4000, '0.0.0.0', () => {
+    console.log("Listening on port 4000")
 });
