@@ -5,6 +5,9 @@ Its a simple server based on 3 containers:
 - A NodeJS - with Express API to connect on database and listing users.
 - A basic PHP website to consume the API and show the users in an HTML table.
 
+
+![](/preview.png)
+
 Setup
 ---
 There is a simple bash script, that setup everything, like dependencies and build images.<br>
